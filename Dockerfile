@@ -6,4 +6,4 @@ RUN mkdir -p /root/.openclaw
 
 ENV NODE_ENV=production
 
-CMD openclaw gateway run --bind=0.0.0.0 --port=${PORT:-3000}
+CMD openclaw gateway run --bind=auto --port=${PORT:-3000}
